@@ -12,8 +12,6 @@ applications:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
       JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{ enabled: false }'
       SPRING_PROFILES_ACTIVE: cloud
-      APPLICATIONINSIGHTS_CONNECTION_STRING: InstrumentationKey=34601dff-41d7-42f1-9acd-1d64bef3a4c2;IngestionEndpoint=https://westus3-1.in.applicationinsights.azure.com/
-      APPLICATIONINSIGHTS_ROLE_NAME: petclinic.customers-service
     services:
       - customers-db
       - config
@@ -32,8 +30,6 @@ applications:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
       JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{ enabled: false }'
       SPRING_PROFILES_ACTIVE: cloud
-      APPLICATIONINSIGHTS_CONNECTION_STRING: InstrumentationKey=34601dff-41d7-42f1-9acd-1d64bef3a4c2;IngestionEndpoint=https://westus3-1.in.applicationinsights.azure.com/
-      APPLICATIONINSIGHTS_ROLE_NAME: petclinic.vets-service
     services:
       - vets-db
       - config
@@ -52,8 +48,6 @@ applications:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
       JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{ enabled: false }'
       SPRING_PROFILES_ACTIVE: cloud
-      APPLICATIONINSIGHTS_CONNECTION_STRING: InstrumentationKey=34601dff-41d7-42f1-9acd-1d64bef3a4c2;IngestionEndpoint=https://westus3-1.in.applicationinsights.azure.com/
-      APPLICATIONINSIGHTS_ROLE_NAME: petclinic.visits-service
     services:
       - visits-db
       - config
@@ -70,8 +64,6 @@ applications:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
       JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{ enabled: false }'
       SPRING_PROFILES_ACTIVE: cloud
-      APPLICATIONINSIGHTS_CONNECTION_STRING: InstrumentationKey=34601dff-41d7-42f1-9acd-1d64bef3a4c2;IngestionEndpoint=https://westus3-1.in.applicationinsights.azure.com/
-      APPLICATIONINSIGHTS_ROLE_NAME: petclinic.api-gateway
     services:
       - config
       - registry
