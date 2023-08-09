@@ -2,11 +2,6 @@ FROM openjdk:11-jre as builder
 WORKDIR application
 ARG ARTIFACT_NAME
 COPY ${ARTIFACT_NAME}.jar application.jar
-
-ADD https://github.com/microsoft/ApplicationInsights-Java/releases/download/3.4.15/applicationinsights-agent-3.4.15.jar application/applicationinsights-agent-3.4.15.jar
-RUN chmod 644 application/applicationinsights-agent-3.4.15.jar
-ENV JAVA_TOOL_OPTIONS=-javaagent:application/applicationinsights-agent-3.4.15.jar
-
 RUN java -Djarmode=layertools -jar application.jar extract
 
 # Download dockerize and cache that layer
